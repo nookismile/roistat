@@ -27,4 +27,10 @@
     &:active {
       background-color: #6464FF;
     }
+
+    &:disabled {
+      background: #E2E2E2;
+      color: rgba(29, 29, 29, 0.5);
+      border-color: #E2E2E2;
+    }
 }

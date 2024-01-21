@@ -34,8 +34,8 @@ body {
   color: $main-color;
   background: $back;
 
-  &_freeze {
-
+  &.freeze {
+    overflow: hidden;
   }
 }
 
@@ -57,4 +57,16 @@ body {
   background: $back-opacity;
   backdrop-filter: blur(10px);
   display: none;
+
+    &.active {
+      display: block;
+    }
 }
+
+//.iti__flag {
+//  background-image: url("../img/flags.png");
+//}
+
+//@media (min-resolution: 2x) {
+//  .iti__flag {background-image: url("../img/flags@2x.png");}
+//}

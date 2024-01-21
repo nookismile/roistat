@@ -1,13 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'main.js')],
     output: {
         path: path.resolve(__dirname, 'build'),
         clean: true,
-        filename: 'bundle.js',
+        filename: '[name].js',
         assetModuleFilename: 'assets/[name][ext]',
     },
     plugins: [
@@ -17,6 +18,14 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: __dirname + '/src/scripts/data.php',
+                    to: __dirname + '/build'
+                }
+            ]
+        })
     ],
     module: {
         rules: [
@@ -25,14 +34,14 @@ module.exports = {
                 loader: 'html-loader'
             },
             {
-                test: /\.js$/,
-                exclude: /(node_modules)/,
-                use: ['babel-loader']
+                test: /\.(jpg|png|svg|gif)$/,
+                type: 'asset/resource',
             },
             {
                 test: /\.(c|sa|sc)ss$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    // MiniCssExtractPlugin.loader,
+                    'style-loader',
                     'css-loader',
                     {
                       loader: 'postcss-loader',

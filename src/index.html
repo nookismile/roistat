@@ -75,7 +75,7 @@
                     Воспользуйтесь выгодными предложениями от&nbsp;Roistat в&nbsp;ноябре*
                 </div>
                 <div class="call-to-action__btn">
-                    <a class="main-btn" href="#">
+                    <a class="main-btn js-modal-btn" href="#">
                         Получить выгоду
                         <picture class="main-btn__icon">
                             <img src="./img/arrow-right.svg" alt="" width="24">
@@ -117,36 +117,47 @@
 
 
 
-    <div class="modal">
+    <div class="modal js-modal">
         <div class="modal__wrapper">
             <div class="modal__header">
             <div class="modal__title">
                 Регистрация
                 </div>
-                <button class="modal__close js-close-modal-btn">
+                <button class="modal__close js-close-btn">
                     <div></div>
                     <div></div>
                 </button>
             </div>
-                <form action="" class="form-reg">
+                <form action="" class="form-reg" method="POST">
                     <fieldset class="form-reg__inputs">
-                            <input class="form-input" type="text" placeholder="Имя">
-                            <input class="form-input" type="text" placeholder="Сайт компании">
-                            <input class="form-input" type="tel" placeholder="Телефон">
+                        <div class="js-input-animation">
+                            <input id="input-name" class="form-input js-input js-input-name" type="text" name="name">
+                            <label for="input-name">Имя</label>
+                            <div class="js-error js-error-name"></div>
+                        </div>
+                        <div class="js-input-animation">
+                            <input class="form-input js-input js-input-site" type="text" placeholder="Сайт компании" name="site">
+                            <div class="js-error js-error-site"></div>
+                        </div>
+                        <div class="js-input-animation">
+                            <input class="form-input js-input js-input-phone" type="tel" placeholder="Телефон" name="phone" required>
+                            <div class="js-error js-error-phone"></div>
+                        </div>
                     </fieldset>
-                    <button class="form-reg__btn main-btn" type="submit">
+                    <button class="form-reg__btn main-btn js-btn-form" type="submit" disabled="disabled">
                         Получить код
                     </button>
+                    <div class="success"></div>
+                    <div class="error"></div>
                     <div class="confirm">
-
-                        <input type="checkbox">
-                        <div class="confirm__info">
+                        <input id="check" type="checkbox">
+                        <label for="check" class="confirm__info">
                         Отправляя сведения через электронную форму,
                         вы даете согласие на обработку персональных данных,
                         в том числе сбор, хранение и передачу третьим лицам
                         представленной вами информации на условиях
                         <a href="#">Политики обработки персональных данных.</a>
-                        </div>
+                        </label>
                     </div>
                 </form>
 
