@@ -1,0 +1,37 @@
+.tapes {
+  //position: absolute;
+  display: flex;
+  width: 100%;
+  //bottom: 25%;
+  border-top: 1px solid #323232;
+  border-bottom: 1px solid #323232;
+  background: rgba(29, 29, 29, 0.10);
+  backdrop-filter: blur(19px);
+  transform: rotate(-13deg);
+  overflow-x: hidden;
+
+  &__inner {
+    animation: tape-animation 45s linear infinite;
+  }
+
+  &__item {
+    display: flex;
+    width: max-content;
+    overflow: auto;
+  }
+
+  &__blue:nth-child(1) {
+    animation: marquee1 20s infinite linear;
+    animation-delay: -20s;
+    //margin-left: 20px;
+    // transform: rotate(90deg);
+  }
+
+  &__blue:nth-child(2) {
+    animation: marquee2 20s infinite linear;
+    animation-delay: -10s;
+    //margin-left: 20px;
+    // transform: rotate(90deg);
+  }
+
+}

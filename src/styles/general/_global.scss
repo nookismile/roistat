@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $grey-color;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: $ff-main;
+  color: $main-color;
+  background: $back;
+
+  &_freeze {
+
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.overlay {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: $back-opacity;
+  backdrop-filter: blur(10px);
+  display: none;
+}

@@ -1,0 +1,9 @@
+.logo {
+    & img {
+      height: 48px;
+    }
+
+    &:focus {
+      opacity: 0.7;
+    }
+}

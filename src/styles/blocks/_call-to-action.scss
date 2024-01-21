@@ -1,0 +1,14 @@
+.call-to-action {
+  position: relative;
+  top: -62px;
+  left: 23%;
+
+    &__info {
+      width: 35%;
+      margin-bottom: 32px;
+      font-size: $fs-text;
+      font-weight: $fw-400;
+      line-height: $lh-150;
+      color: $main-color;
+    }
+}

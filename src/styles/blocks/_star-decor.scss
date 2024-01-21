@@ -1,0 +1,11 @@
+.star-decor {
+  position: absolute;
+  top: -73px;
+  right: 45px;
+  z-index: -1;
+
+    &__img {
+      width: 333px;
+      height: 333px;
+    }
+}

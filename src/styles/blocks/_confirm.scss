@@ -1,0 +1,23 @@
+.confirm {
+  display: flex;
+  align-items: flex-start;
+  color: $grey-color;
+  font-size: $fs-text-xxs;
+  line-height: 16px;
+
+  &__info a {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 1px;
+      margin: auto;
+      background: $grey-color;
+      transition: all .3s ease;
+    }
+  }
+}

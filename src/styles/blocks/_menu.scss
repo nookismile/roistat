@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+    &__item {
+      margin-left: 40px;
+    }
+
+    &__link {
+      display: inline-block;
+      padding: 8px;
+      font-family: $ff-accent;
+      font-size: $fs-text;
+      font-weight: $fw-500;
+      line-height: $lh-110;
+      color: $main-color;
+
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
+    }
+}

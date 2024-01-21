@@ -1,0 +1,30 @@
+.main-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  padding: 16px 24px;
+  font-family: $ff-accent;
+  font-size: $fs-text-s;
+  font-weight: $fw-500;
+  line-height: $lh-20;
+  color: $main-color;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+  border-radius: 16px;
+  cursor: pointer;
+
+    &__icon {
+      width: 24px;
+      height: 16px;
+    }
+
+    &:hover {
+      background-color: $accent-color-hover;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #6464FF;
+    }
+}
