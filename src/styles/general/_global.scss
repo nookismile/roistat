@@ -43,7 +43,6 @@ body {
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
-  user-select: none;
 }
 
 .overlay {
@@ -63,10 +62,3 @@ body {
     }
 }
 
-//.iti__flag {
-//  background-image: url("../img/flags.png");
-//}
-
-//@media (min-resolution: 2x) {
-//  .iti__flag {background-image: url("../img/flags@2x.png");}
-//}

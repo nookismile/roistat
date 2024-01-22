@@ -21,7 +21,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: __dirname + '/src/scripts/data.php',
+                    from: __dirname + '/src/form_ajax.php',
                     to: __dirname + '/build'
                 }
             ]

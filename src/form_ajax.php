@@ -10,7 +10,7 @@
 
 if (isset($_POST)) {
     print("Имя: " . $_POST['name']);
-    print("<br>Email: " . $_POST['site']);
-    print("<br>Сообщение: " . $_POST['phone']);
+    print("<br>Сайт: " . $_POST['site']);
+    print("<br>Телефон: " . $_POST['phone']);
 }
 ?>

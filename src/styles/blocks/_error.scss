@@ -1,0 +1,13 @@
+.error {
+  display: none;
+  position: absolute;
+  top: -15px;
+  padding: 0 10px;
+  font-size: 11px;
+  line-height: 11px;
+  color: $error-color;
+
+    &.active {
+      display: block;
+    }
+}

@@ -1,7 +1,15 @@
+.input-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}
+
 .form-input {
   width: 100%;
   height: 56px;
-  margin-bottom: 16px;
   padding: 12px 20px;
   color: rgba(255, 255, 255, 0.50);
   border-radius: 8px;
@@ -9,12 +17,23 @@
   background: linear-gradient(129deg, rgba(250, 250, 250, 0.10) -0.77%, rgba(164, 164, 164, 0.00) 140.72%);
   box-shadow: 14.219px 15.234px 43.672px 0px rgba(194, 194, 194, 0.05) inset, 0px 65px 130px -5.078px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(15.7421875px);
-
-  &:last-child {
-    margin-bottom: 24px;
-  }
 }
 
-::placeholder {
-  color: rgba(255, 255, 255, 0.50);
+.form-input-label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  transition: all 0.2s linear;
 }
+
+.form-input:focus + .form-input-label,
+.form-input:not(:placeholder-shown) + .form-input-label {
+  transform: translateY(-250%);
+  font-size: 12px;
+}
+
+.form-input::placeholder {
+  opacity: 0;
+}
+

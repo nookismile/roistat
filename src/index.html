@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Roistat</title>
-
 </head>
 <body>
     <div class="full">
@@ -114,9 +113,6 @@
         </main>
         </div>
     </div>
-
-
-
     <div class="modal js-modal">
         <div class="modal__wrapper">
             <div class="modal__header">
@@ -130,18 +126,20 @@
             </div>
                 <form action="" class="form-reg" method="POST">
                     <fieldset class="form-reg__inputs">
-                        <div class="js-input-animation">
-                            <input id="input-name" class="form-input js-input js-input-name" type="text" name="name">
-                            <label for="input-name">Имя</label>
-                            <div class="js-error js-error-name"></div>
+                        <div class="input-wrapper js-input-wrapper">
+                            <input id="input-name" class="form-input js-input js-input-name" placeholder="Имя" type="text" name="user_name">
+                            <label class="form-input-label" for="input-name">Имя</label>
+                            <div class="error js-error js-error-name"></div>
                         </div>
-                        <div class="js-input-animation">
-                            <input class="form-input js-input js-input-site" type="text" placeholder="Сайт компании" name="site">
-                            <div class="js-error js-error-site"></div>
+                        <div class="input-wrapper js-input-wrapper">
+                            <input id="input-site" class="form-input js-input js-input-site" placeholder="Сайт компании" type="text" name="site">
+                            <label class="form-input-label" for="input-site">Сайт компании</label>
+                            <div class="error js-error js-error-site"></div>
                         </div>
-                        <div class="js-input-animation">
-                            <input class="form-input js-input js-input-phone" type="tel" placeholder="Телефон" name="phone" required>
-                            <div class="js-error js-error-phone"></div>
+                        <div class="input-wrapper js-input-wrapper">
+                            <input id="input-phone" class="form-input js-input js-input-phone" placeholder="Телефон" type="tel" name="phone" required>
+                            <label class="form-input-label" for="input-phone">Телефон</label>
+                            <div class="error js-error js-error-phone"></div>
                         </div>
                     </fieldset>
                     <button class="form-reg__btn main-btn js-btn-form" type="submit" disabled="disabled">
@@ -160,7 +158,6 @@
                         </label>
                     </div>
                 </form>
-
         </div>
     </div>
 <div class="overlay"></div>

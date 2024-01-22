@@ -4,6 +4,11 @@ let modalClose = document.querySelector('.js-close-btn');
 let modalOverlay = document.querySelector('.overlay');
 let body = document.querySelector('body')
 
+const Keys = {
+    ESC: 'Esc',
+    ESCAPE: 'Escape',
+};
+
 const openModal = () => {
     modal.classList.add('open');
     modalOverlay.classList.add('active');
@@ -17,6 +22,18 @@ const closeModal = () => {
 }
 
 modalBtn.addEventListener('click', openModal);
-modal.addEventListener('click', function(e) {
-
+modalClose.addEventListener('click', () => {
+    closeModal();
 });
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === Keys.ESC || e.key === Keys.ESCAPE) {
+        closeModal();
+    }
+});
+
+modalOverlay.addEventListener('click', () => {
+    closeModal();
+});
+
+
