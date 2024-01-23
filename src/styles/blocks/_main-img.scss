@@ -1,7 +1,7 @@
 .main-img {
-  width: 83%;
+  width: 1143px;
 
-    //@media(max-width: 1200px) {
-    //
-    //}
+    @media(max-width: 1200px) {
+      width: 843px;
+    }
 }

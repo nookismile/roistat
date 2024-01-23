@@ -1,11 +1,23 @@
 .star-decor {
   position: absolute;
-  top: -73px;
-  right: 45px;
-  z-index: -1;
+  top: 60px;
+  right: -35px;
+  z-index: 0;
+
+  @media(max-width: $mobile) {
+    top: 20px;
+    right: -18px;
+  }
 
     &__img {
       width: 333px;
-      height: 333px;
+
+      @media(max-width: $desktop-s) {
+        width: 236px;
+      }
+
+      @media(max-width: $tablet) {
+        width: 122px;
+      }
     }
 }

@@ -1,8 +1,7 @@
 .full {
   position: relative;
-  width: 100%;
-  max-width: 1360px;
-  height: 100%;
-  margin: 0 auto;
-  padding-top: 40px;
+  background-image: url('../img/main-back.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

@@ -1,0 +1,24 @@
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  padding: 24px 20px;
+  overflow: auto;
+  background: $back;
+
+  &.active {
+    display: block;
+  }
+}
+
+.menu-list-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}

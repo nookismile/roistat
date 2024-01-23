@@ -40,9 +40,25 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
+  padding: 0 40px;
+
+  @media(max-width: $desktop-s) {
+    max-width: 960px;
+    padding: 0 32px;
+  }
+
+  @media(max-width: $tablet) {
+    max-width: 728px;
+    padding: 0 20px;
+  }
+
+  @media(max-width: $mobile) {
+    padding: 0 20px;
+  }
 }
 
 .overlay {
@@ -60,5 +76,9 @@ body {
     &.active {
       display: block;
     }
+}
+
+.parallax__layer {
+  transition: transform 0.3s linear;
 }
 

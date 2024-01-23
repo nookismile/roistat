@@ -1,6 +1,10 @@
 .logo {
     & img {
       height: 48px;
+
+      @media(max-width: 600px) {
+       width: 80px;
+      }
     }
 
     &:focus {

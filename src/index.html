@@ -6,85 +6,62 @@
     <title>Roistat</title>
 </head>
 <body>
+<div class="full">
 <div class="main-back">
     <picture>
         <source srcset="./img/back-2x.png">
-        <!--                <source media="(max-width: 1000px)" srcset="./img/back.png">-->
         <img class="main-back__img" src="./img/back.png" alt="" width="766">
     </picture>
 </div>
-<!--<div class="tapes">-->
-<!--    <div class="tapes__blue">-->
-<!--        <picture class="tapes__img">-->
-<!--            <img src="./img/black-friday.svg" alt="" width="600">-->
-<!--        </picture>-->
-<!--    </div>-->
-<!--    <div class="tapes__blue">-->
-<!--        <picture class="tapes__img">-->
-<!--            <img src="./img/black-friday.svg" alt="" width="600">-->
-<!--        </picture>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;                    <div class="tapes__blue">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        <picture class="tapes__img">&ndash;&gt;-->
-<!--    &lt;!&ndash;                            <img src="./img/black-friday.svg" alt="" width="600">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        </picture>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    <div class="tapes__blue">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        <picture class="tapes__img">&ndash;&gt;-->
-<!--    &lt;!&ndash;                            <img src="./img/black-friday.svg" alt="" width="600">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        </picture>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    <div class="tapes__blue">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        <picture class="tapes__img">&ndash;&gt;-->
-<!--    &lt;!&ndash;                            <img src="./img/black-friday.svg" alt="" width="600">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        </picture>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    <div class="tapes__blue">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        <picture class="tapes__img">&ndash;&gt;-->
-<!--    &lt;!&ndash;                            <img src="./img/black-friday.svg" alt="" width="600">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        </picture>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    <div class="tapes__blue">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        <picture class="tapes__img">&ndash;&gt;-->
-<!--    &lt;!&ndash;                            <img src="./img/black-friday.svg" alt="" width="600">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        </picture>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    <div class="tapes__blue">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        <picture class="tapes__img">&ndash;&gt;-->
-<!--    &lt;!&ndash;                            <img src="./img/black-friday.svg" alt="" width="600">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        </picture>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    </div>&ndash;&gt;-->
-
-<!--    &lt;!&ndash;                    <div class="tapes__item tapes__item-yellow">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        <picture class="tapes__img">&ndash;&gt;-->
-<!--    &lt;!&ndash;                            <img src="./img/black-friday-yellow.svg" alt="" width="600">&ndash;&gt;-->
-<!--    &lt;!&ndash;                        </picture>&ndash;&gt;-->
-<!--    &lt;!&ndash;                    </div>&ndash;&gt;-->
-
-<!--</div>-->
-<!--<div class="tapes tapes_yellow">-->
-<!--    <div class="tapes__yellow">-->
-<!--        <picture class="tapes__img">-->
-<!--            <img src="./img/black-friday-yellow.svg" alt="" width="600">-->
-<!--        </picture>-->
-<!--    </div>-->
-<!--    <div class="tapes__yellow">-->
-<!--        <picture class="tapes__img">-->
-<!--            <img src="./img/black-friday-yellow.svg" alt="" width="600">-->
-<!--        </picture>-->
-<!--    </div>-->
-<!--    <div class="tapes__yellow">-->
-<!--        <picture class="tapes__img">-->
-<!--            <img src="./img/black-friday-yellow.svg" alt="" width="600">-->
-<!--        </picture>-->
-<!--    </div>-->
-<!--</div>-->
-    <div class="full">
+<div class="wrapper">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__inner">
+                <div class="header__logo">
+                    <a class="logo" href="/">
+                        <img src="./img/roistat_logo_white.svg" alt="лого" width="110" height="48">
+                    </a>
+                </div>
+                <nav class="header__nav main-nav">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link link" href="#">Наши предложения</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link link" href="#">Цены</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+            <button class="header__btn menu-burger js-burger" type="button">
+                <div class="menu-burger__inner"></div>
+            </button>
+            <div class="menu-mobile js-menu-mobile">
+                <div class="menu-mobile_wrapper">
+                    <ul class="menu-list-mobile">
+                        <li class="menu-list-mobile__item"><a class="link" href="#">Наши предложения</a></li>
+                        <li class="menu-list-mobile__item"><a class="link" href="#">Цены</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main parallax">
+            <div class="star-decor parallax__layer" data-speed="0.12">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./img/star-mobile.svg">
+                    <source media="(max-width: 1000px)" srcset="./img/star-tablet.svg">
+                    <img class="star-decor__img" src="./img/star.svg" alt="" width="295">
+                </picture>
+            </div>
         <div class="content">
             <picture>
+                <source media="(max-width: 700px)" srcset="./img/title-mobile-2x.png">
+                <source media="(max-width: 900px)" srcset="./img/title-tablet-2x.png">
                 <source srcset="./img/title-2x.png">
-                <!--                <source media="(max-width: 1000px)" srcset="./img/back.png">-->
-                <img class="main-img" src="./img/title.png" alt="" width="1104">
+                <source media="(max-width: 700px)" srcset="./img/title-mobile.png">
+                <source media="(max-width: 900px)" srcset="./img/title-tablet.png">
+                <img class="main-img parallax__layer" data-speed="0.07" src="./img/title.png" alt="" width="1104">
             </picture>
             <div class="call-to-action">
                 <div class="call-to-action__info">
@@ -99,39 +76,106 @@
                     </a>
                 </div>
             </div>
-
         </div>
-        <div class="wrapper">
-        <header class="header">
-            <div class="header__wrapper">
-            <div class="header__logo">
-                <a class="logo" href="/">
-                    <img src="./img/roistat_logo_white.svg" alt="лого" width="110" height="48">
-                </a>
-            </div>
-            <nav class="header__nav main-nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Наши предложения</a>
+        </main>
+<!--    <div class="tapes-wrapper">-->
+<!--    <div class="tapes">-->
+<!--        <div class="tapes__item tapes__item_blue">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__item tapes__item_blue">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__item tapes__item_blue">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__item tapes__item_blue">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__item tapes__item_blue">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__item tapes__item_blue">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__item tapes__item_blue">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--    </div>-->
+
+    <div class="marquee">
+        <div class="marquee__inner splide">
+            <div class="marquee__inner splide__track">
+                <ul class="splide__list">
+                    <li class="marquee__item splide__slider">
+                        <span class="marquee__text">
+                            <img src="./img/black-friday.svg" alt="">
+                        </span>
                     </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Цены</a>
+                    <li class="marquee__item splide__slider">
+                        <span class="marquee__text">
+                            <img src="./img/black-friday.svg" alt="">
+                        </span>
+                    </li>
+                    <li class="marquee__item splide__slider">
+                        <span class="marquee__text">
+                            <img src="./img/black-friday.svg" alt="">
+                        </span>
+                    </li>
+                    <li class="marquee__item splide__slider">
+                        <span class="marquee__text">
+                            <img src="./img/black-friday.svg" alt="">
+                        </span>
                     </li>
                 </ul>
-            </nav>
+
             </div>
-        </header>
-        <main class="main">
-            <div class="star-decor">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="./img/star-mobile.svg">
-                    <source media="(max-width: 1000px)" srcset="./img/star-tablet.svg">
-                    <img class="star-decor__img" src="./img/star.svg" alt="" width="295">
-                </picture>
-            </div>
-        </main>
         </div>
     </div>
+        </div>
+
+<!--    <div class="tapes tapes_yellow">-->
+<!--        <div class="tapes__yellow">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday-yellow.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__yellow">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday-yellow.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--        <div class="tapes__yellow">-->
+<!--            <picture class="tapes__img">-->
+<!--                <img src="./img/black-friday-yellow.svg" alt="" width="600">-->
+<!--            </picture>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<div class="wrapper">
+    <div class="info">
+        *Акция не&nbsp;распространяется на&nbsp;подключение опций, лимитов, которые были подключены ранее до&nbsp;1.11.2023 Количество предложений ограничено
+    </div>
+</div>
+</div>
+
+
     <div class="modal js-modal">
         <div class="modal__wrapper">
             <div class="modal__header">

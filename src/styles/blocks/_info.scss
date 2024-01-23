@@ -1,0 +1,16 @@
+.info {
+  width: 359px;
+  margin-left: auto;
+  padding-bottom: 90px;
+  font-family: $ff-main;
+  font-size: $fs-text-xs;
+  font-weight: $fw-400;
+  line-height: $lh-130;
+  color: $main-color;
+  text-align: right;
+
+  @media(max-width: $mobile-l) {
+    width: 100%;
+    text-align: left;
+  }
+}
