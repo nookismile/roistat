@@ -32,7 +32,10 @@ body {
   margin: 0;
   font-family: $ff-main;
   color: $main-color;
-  background: $back;
+  background-image: url('../img/main-back.png');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
 
   &.freeze {
     overflow: hidden;

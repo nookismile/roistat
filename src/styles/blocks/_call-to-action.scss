@@ -1,7 +1,7 @@
 .call-to-action {
   position: relative;
   top: -62px;
-  z-index: 4;
+  z-index: 1;
   padding-left: 23%;
 
   @media(max-width: $tablet) {
@@ -9,6 +9,7 @@
   }
 
   @media(max-width: $mobile-l) {
+    margin-bottom: 15px;
     padding-left: 0;
   }
 
@@ -19,10 +20,14 @@
       line-height: $lh-150;
       color: $main-color;
 
-      @media(max-width: 600px) {
+      @media(max-width: $mobile-l) {
         & br {
           display: none;
         }
       }
     }
+
+  @media(max-width: 600px) {
+    margin-bottom: 15px;
+  }
 }
