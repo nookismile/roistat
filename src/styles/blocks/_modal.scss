@@ -6,6 +6,8 @@
   z-index: 11;
   width: 100%;
   max-width: 500px;
+  height: 100%;
+  max-height: 522px;
   margin: 0 auto;
   padding: 40px;
   background: rgba(29, 29, 29, 0.8);
@@ -15,6 +17,11 @@
   backdrop-filter: blur(15px);
   transform: translateY(-200%);
   transition: opacity .4s cubic-bezier(.25,.8,.25,1);
+  overflow: auto;
+
+  @media(max-width: $mobile) {
+    padding: 20px;
+  }
 
   &.open {
     opacity: 1;
@@ -38,6 +45,10 @@
     font-weight: 600;
     line-height: 44px;
     letter-spacing: 1px;
+
+    @media(max-width: $mobile) {
+      font-size: 20px;
+    }
   }
 
   &__close {

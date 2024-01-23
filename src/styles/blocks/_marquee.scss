@@ -1,0 +1,37 @@
+.marquee {
+  position: relative;
+  top: -332px;
+  z-index: 2;
+  transform: rotate(-13deg);
+  overflow: hidden;
+
+  @media(max-width: $tablet) {
+    top: -242px
+  }
+
+  &_yellow {
+    top: -367px;
+    z-index: 1;
+    transform: rotate(-6deg);
+
+    @media(max-width: $tablet) {
+      top: -278px;
+    }
+  }
+
+  &__inner {
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+    background: rgba(29, 29, 29, 0.10);
+    backdrop-filter: blur(19px);
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__text {
+    width: 600px;
+    margin-left: 20px;
+  }
+}
